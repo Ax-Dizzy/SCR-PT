@@ -1,14 +1,16 @@
-gg.setVisible(true)
+gg.setVisible(false)
 gg.sleep(200)
 gg.alert("       🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷 \n       🇹🇷  ⚠️  HOŞGELDİNİZ  ⚠️ ️   🇹🇷\n       🇹🇷  👑 「AX」๛TEAM  👑   🇹🇷 \n       🇹🇷🇹🇷 👉SÜRÜM BETA👈🇹🇷🇹🇷 \n            🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷     ")
 
 gg.sleep(250)
-gg.toast("SCRİPT YÜKLENİYOR")
-PUBGMH =-1
+gg.toast("⚠️ SCRİPT YÜKLENİYOR ⚠️")
+gg.sleep(400)
+gg.setVisible(true)
+PUBGMH = -1
 function HOME() --Ana Menü
 MENU = gg.choice({
            "••••••••••••••••••••••\n☠ •WH & CL• ☠ \n••••••••••••••••••••••  ",
-           "••••••••••••••••••••••\n    ☠ •LOBİİ• ☠\n••••••••••••••••••••••",
+           "••••••••••••••••••••••\n    ☠ •LOBİ• ☠\n••••••••••••••••••••••",
            "••••••••••••••••••••••\n   ☠ • OYUN• ☠\n•••••••••••••••••••••• ",
            "••••••••••••••••••••••\n    ☠ •BİLGİ• ☠\n•••••••••••••••••••••• ",
            "    ◄⎋ÇIKIŞ►"
@@ -42,7 +44,7 @@ WC = gg.multiChoice({
            "SD 625",
            "SD 660",
            "SD 710",
-           "SD 845",
+		   "SD 845",
            "MENÜ"
 }, nil, "🎯 ANTREMAN MODUNDA AÇINIZ 🎯")
   if WC == nil then
@@ -238,6 +240,10 @@ function WC6()
     gg.toast('Wallhack SD845 AÇILDI!')
 end
 
+
+
+--------STEP[1] Lobby👇--------
+
 function MN2() --Menü lobi
 ML = gg.multiChoice({
            "SEKMEME",
@@ -273,13 +279,11 @@ end
 
 function ML1() 
   gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("2A0", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("-1903895931231645696", gg.TYPE_QWORD)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1634692166", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("1634692266", gg.TYPE_DWORD)
   gg.clearResults()
   gg.toast("SEKMEME AÇILDI")
   end
@@ -418,6 +422,8 @@ end
 
 
 
+--------STEP[4] Game👇--------
+
 function MN3() --Menü oyun
 MG = gg.multiChoice({
            "KAFADAN VURMA %100",
@@ -425,9 +431,9 @@ MG = gg.multiChoice({
            "ANTEN KAMUFLAJ",
            "JİPİ HIZLANDIR",
            "OTUR DÜRBÜN AÇ",
-           "GERİDEN GÖRÜŞ",
-           "GÖRÜNMEZLİK (15 sn)",
-	   "HIZLI İNME PARAŞÜT (ADA)",
+		   "GERİDEN GÖRÜŞ",
+		   "GÖRÜNMEZLİK (15 sn)",
+		   "HIZLI İNME PARAŞÜT (ADA)",
            "BACK",
 }, nil, " BİR ÖLÜR BİN DİRİLİRİZ")
   if MG == nil then
