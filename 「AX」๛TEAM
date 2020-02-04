@@ -1,7 +1,7 @@
 gg.setVisible(false)
 gg.sleep(200)
 gg.alert("       🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷 \n       🇹🇷  ⚠️  HOŞGELDİNİZ  ⚠️ ️   🇹🇷\n       🇹🇷  👑 「AX」๛TEAM  👑   🇹🇷 \n       🇹🇷🇹🇷 👉SÜRÜM BETA👈🇹🇷🇹🇷 \n            🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷     ")
-
+gg.alet("               NELER YENİ ?")
 gg.sleep(250)
 gg.toast("⚠️ SCRİPT YÜKLENİYOR ⚠️")
 gg.sleep(400)
@@ -44,7 +44,7 @@ WC = gg.multiChoice({
            "SD 625",
            "SD 660",
            "SD 710",
-		   "SD 845",
+           "SD 845",
            "MENÜ"
 }, nil, "🎯 ANTREMAN MODUNDA AÇINIZ 🎯")
   if WC == nil then
@@ -240,10 +240,6 @@ function WC6()
     gg.toast('Wallhack SD845 AÇILDI!')
 end
 
-
-
---------STEP[1] Lobby👇--------
-
 function MN2() --Menü lobi
 ML = gg.multiChoice({
            "SEKMEME",
@@ -424,8 +420,6 @@ end
 
 
 
---------STEP[4] Game👇--------
-
 function MN3() --Menü oyun
 MG = gg.multiChoice({
            "KAFADAN VURMA %100",
@@ -433,9 +427,9 @@ MG = gg.multiChoice({
            "ANTEN KAMUFLAJ",
            "JİPİ HIZLANDIR",
            "OTUR DÜRBÜN AÇ",
-		   "GERİDEN GÖRÜŞ",
-		   "GÖRÜNMEZLİK (15 sn)",
-		   "HIZLI İNME PARAŞÜT (ADA)",
+           "GERİDEN GÖRÜŞ",
+           "GÖRÜNMEZLİK (15 sn)",
+	   "HIZLI İNME PARAŞÜT (ADA)",
            "BACK",
 }, nil, " BİR ÖLÜR BİN DİRİLİRİZ")
   if MG == nil then
