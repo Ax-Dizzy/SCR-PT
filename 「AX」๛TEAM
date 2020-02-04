@@ -424,7 +424,7 @@ end
 
 --------STEP[4] Game👇--------
 
-function MN3() --Menü oyun
+function MN3() 
 MG = gg.multiChoice({
            "KAFADAN VURMA %100",
            "ANTEN",
@@ -465,6 +465,7 @@ MG = gg.multiChoice({
     end
     if MG [9] == true then
 	  MG9()
+	end
     if MG [10] == true then
       HOME()
     end
@@ -612,12 +613,54 @@ function MG8()
 end
 function MG9()
 jump = gg.multiChoice({
-    "✧ ZIPLAMA [AÇ]",
-    "✧ ZIPLAMA [KAPAT]",
-    "GERİ"
+    " ZIPLAMA [AÇ]",
+    " ZIPLAMA [KAPAT]",
+    "GERİ",
 }, nil, "DİKKAT")
 end
-
+  if jump == nil then
+  else
+    if jump[1] == true then
+      jumpon()
+    end
+    if jump[2] == true then
+      jumpoff()
+    end
+    if jump[3] == true then
+      MG()
+    end
+  end
+  PUBGMH = -1
+function jumpon()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1.4012985e-45;1.0;443.0:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(27)
+  gg.editAll("3.009", gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1.4012985e-45;3.009;443.0:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("443", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("2197", gg.TYPE_FLOAT)
+  gg.toast("ZIPLAMA AÇILDI")
+end
+function jumpoff()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1.4012985e-45;3.009;443.0:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("3.009", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("1.0", gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1.4012985e-45;3.009;2197:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2197", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("443", gg.TYPE_FLOAT)
+  gg.toast("ZIPLAMA KAPTILDI")
+  gg.clearResults()
+end
+  
 function INFO()
 gg.alert(os.date("    ----------HİLELER HAKINDA BİLGİ----------\n \n                          ☠ •LOBİ• ☠\n• SEKMEME\nSilahınızın sekmemesini sağlar.\n• SEKMEME(TİTREŞİMSİZ)\nSilahınızın titremeden sekmemesini sağlar."))
 gg.setVisible(true)
