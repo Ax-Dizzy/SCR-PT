@@ -2,7 +2,6 @@ gg.setVisible(false)
 gg.sleep(200)
 gg.alert("       🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷 \n       🇹🇷  ⚠️  HOŞGELDİNİZ  ⚠️ ️   🇹🇷\n       🇹🇷  👑 「AX」๛TEAM  👑   🇹🇷 \n       🇹🇷🇹🇷 👉SÜRÜM BETA👈🇹🇷🇹🇷 \n            🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷     "),
 gg.sleep(250)
-PUBGMH = -1
 function HOME() --Ana Menü
 MENU = gg.choice({
            "••••••••••••••••••••••\n☠ •WH & CL• ☠ \n••••••••••••••••••••••  ",
