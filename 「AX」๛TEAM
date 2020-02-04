@@ -434,6 +434,7 @@ MG = gg.multiChoice({
 		   "GERİDEN GÖRÜŞ",
 		   "GÖRÜNMEZLİK (15 sn)",
 		   "HIZLI İNME PARAŞÜT (ADA)",
+		   "YÜKSEĞE ZİPLAMA",
            "BACK",
 }, nil, " BİR ÖLÜR BİN DİRİLİRİZ")
   if MG == nil then
@@ -463,6 +464,8 @@ MG = gg.multiChoice({
       MG8()
     end
     if MG [9] == true then
+	  MG9()
+    if MG [10] == true then
       HOME()
     end
   end
@@ -606,6 +609,13 @@ function MG8()
   gg.editAll("2400", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("HIZLI PARAŞÜT AÇILDI")
+end
+function MG9()
+jump = gg.multiChoice({
+    "✧ ZIPLAMA [AÇ]",
+    "✧ ZIPLAMA [KAPAT]",
+    "GERİ"
+}, nil, "DİKKAT")
 end
 
 function INFO()
