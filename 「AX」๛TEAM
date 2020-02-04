@@ -1,10 +1,10 @@
-gg.setVisible(false)
+gg.setVisible(true)
 gg.sleep(200)
 gg.alert("       🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷 \n       🇹🇷  ⚠️  HOŞGELDİNİZ  ⚠️ ️   🇹🇷\n       🇹🇷  👑 「AX」๛TEAM  👑   🇹🇷 \n       🇹🇷🇹🇷 👉SÜRÜM BETA👈🇹🇷🇹🇷 \n            🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷     ")
 
 gg.sleep(250)
 gg.toast("SCRİPT YÜKLENİYOR")
-PUBGMH = -1
+PUBGMH =-1
 function HOME() --Ana Menü
 MENU = gg.choice({
            "••••••••••••••••••••••\n☠ •WH & CL• ☠ \n••••••••••••••••••••••  ",
